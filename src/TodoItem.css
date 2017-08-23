@@ -28,7 +28,7 @@
     margin-right:0.5em;
   }
 
-/*.TodoItem>.toggle {
+.toggle {
     display: block;
 	  height: 35px;
   	width: 35px;
@@ -42,7 +42,7 @@
 }
 
 
-  .TodoItem>.toggle:before{
+.toggle:before{
     content: '';
     width: 15px;
     height: 15px;
@@ -56,7 +56,7 @@
     -moz-box-shadow: 0 1px 1px #dfecf4;
     box-shadow: 0 1px 1px #dfecf4;
   }
-  .TodoItem>.toggle:after{
+.hook{
     content: '';
     position: absolute;
     width: 9px;
@@ -74,17 +74,14 @@
     transform: rotate(-45deg);
     opacity:0;
   }
-
   input[type=checkbox] {
     display: none;
 }
-*/
-  input[type=checkbox]:checked + .toggle:after{
+
+  input[type=checkbox]:checked+.hook{
 	opacity:1; 
 
 }
-
-
 
 .toggle:hover:before {
     -webkit-box-shadow: 0 0 3px #6bb3ca;
